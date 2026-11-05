@@ -12,6 +12,15 @@ Generated images tend to do the opposite. Everyone is lit, everyone is sharp, ev
 
 If a real still does the job, use it. Real frames are richer and more natural. Generate only to fill a gap, or when you need something very specific that no real still shows.
 
+It helps to know what you're being measured against. Going through a board of 55 real stills, four things kept coming up:
+
+- **Nobody is posing.** People are busy or mid-thought, and few of them are smiling.
+- **The framing is imperfect.** Sometimes it's only hands, a figure through a doorway, or someone tiny against a coast.
+- **Places have a history.** A desk buried in paper, or paint the weather has been at for years.
+- **The light is simple.** One source falls away, and one strong colour sits in a quiet frame.
+
+None of that is texture, which is why grain doesn't rescue a weak frame. It has to be in the prompt.
+
 ## What we found
 
 We measured 44 real film and TV stills, then two tests and a full run against them. All figures are medians.
@@ -61,6 +70,24 @@ This is the rule against overcooking.
 
 In the full run, a take that misses gets one retry. A shot that still misses is covered by a real still or something else, with no reshoot. Our run was twelve shots of six takes: 72 takes and 14 retries gave thirteen picks and four spares.
 
+Once the tests are done, let the run finish in one go:
+
+- **Name the model.** Ask for the newest image model by name, fall back to the best one available, and record which one ran.
+- **Hand over finished prompts.** A job file with each image's inputs, output path and final prompt leaves less to interpret than a brief.
+- **Don't stop to ask.** Tell the agent to make the sensible call when something is unclear and write it down. Its own approval setting may still need changing.
+
+## Regenerate, don't repair
+
+A frame that misses gets a new generation, from its words and its original inputs. Don't ask a model to redo or adjust an image it made. In our drawn set, a redo came back with mottled noise across flat colour that a fresh generation didn't have.
+
+Three habits keep this cheap:
+
+- **Keep every prompt.** A saved prompt turns a change into a sentence, not a rebuild.
+- **Swap one sentence and regenerate the set.** To change one thing across a series, such as a character's outfit, replace that sentence in each saved prompt and make every image again.
+- **Attach originals only.** Inputs are the first supplied references, never a generated file.
+
+Regenerated images won't match the old ones exactly, so keep the earlier versions and let a person choose between them.
+
 ## Finishing
 
 The scripts need ImageMagick 7.
@@ -100,6 +127,8 @@ This repo holds no film stills and no sample frames. The stills aren't ours to p
 ## Scope
 
 One project, made with ChatGPT Images run by Codex in November 2026. The shots were people indoors, plus streets and weather. The rules should carry to other models, but we haven't tested them there.
+
+Next to test: shots with no face to judge, such as hands, backs, doorways and far-off figures, and people busy alone rather than in an exchange. Real stills lean on both, and an invented face may be what gives a generated frame away. That's a hunch so far, so it isn't in the lock.
 
 ## For agents
 

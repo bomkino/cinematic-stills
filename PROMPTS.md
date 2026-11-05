@@ -27,6 +27,7 @@ Every prompt has four parts, in this order:
 - **Go easy on texture words.** "Weathered surfaces" turned ordinary houses derelict.
 - **Words only for photographs.** Every face is invented, so describe people by age, clothes and what they're doing.
 - **One figure, one pose per generation** for drawn characters or anything else that needs a reference. Attach one reference at most, because a sheet as input invites a sheet as output. Build sheets afterwards from the finished files.
+- **Change the words, not the image.** When a take misses or one detail changes, edit the saved prompt and generate again. Never attach a generated image.
 - **Keep an uncast lead undecided.** Show them from behind or as hands, with their hair covered, so the frame doesn't cast them.
 
 ## Worked example: people

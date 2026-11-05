@@ -12,6 +12,7 @@ These hold in every step.
 - Inputs contain no stills of real performers, for any purpose, including composition.
 - Images that reach a client are labelled as generated.
 - A person makes the picks.
+- A take that misses is regenerated from its prompt and original inputs. Generated images are never inputs, and nothing is edited in place.
 
 ## Steps
 
@@ -21,7 +22,7 @@ These hold in every step.
 
 3. **Test.** Generate one shot and show it to the person as a labelled sheet. Change the brief from what they say. Two tests is the limit, then commit. Done when the person says go, or the second test is reviewed.
 
-4. **Run.** One image per generation, at the largest size the tool gives. Work through the shots in order without stopping to ask. A take that misses gets one retry. Save every take and build one labelled sheet per shot. Done when every take exists or has used its retry, and a manifest lists each file, its prompt and its retries.
+4. **Run.** Ask for the newest image model by name and fall back to the best one available. One image per generation, at the largest size the tool gives. Work through the shots in order without stopping to ask, and when something is unclear, make the sensible call and note it. A take that misses gets one retry. Save every take and build one labelled sheet per shot. Done when every take exists or has used its retry, and a manifest lists each file, its prompt, its retries, the model that ran and any calls you made.
 
 5. **Review.** Look at every take on its sheet and flag the ones with grins, posing, a sharp crowd, a visible ceiling, text, or a background figure who could read as a lead. Show the person the sheets with your flags. Done when the person has named the picks. A shot with no pick is covered by a real still or something else, with no reshoot.
 
